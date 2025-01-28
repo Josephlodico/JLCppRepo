@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdlib> // this is required for the system
 using namespace std;  //this makes sure that you don't have to write std all the time
 
 
@@ -37,10 +38,12 @@ int main()
     int id;
     string username, password;
 
+    
     cout << "Create your Account\n";
     cout << "Enter Account ID:";
     cin >> id;
     cin.ignore(); //this clears a newline character from the input buffer
+   
 
     //makes you enter your Username
     cout << "Enter Username: ";
@@ -68,7 +71,7 @@ int main()
 
         if (user.Login(enteredUsername, enteredPassword))
         {
-            cout << "Login successful!!\n";
+            cout << "Your Login was successful!!\n";
             cout << "Account ID:" << user.getID() << "\n";
             break;
         }
@@ -78,6 +81,7 @@ int main()
 
         }
     }
+    //system("cls"); //clears the console
     return 0;
 
 
