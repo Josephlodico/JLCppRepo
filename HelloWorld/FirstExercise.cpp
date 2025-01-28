@@ -68,7 +68,7 @@ int main()
 
         if (user.Login(enteredUsername, enteredPassword))
         {
-            cout << "Login successful!!\n";
+            cout << "\nLogin successful!!\n";
             cout << "Account ID:" << user.getID() << "\n";
             break;
         }
