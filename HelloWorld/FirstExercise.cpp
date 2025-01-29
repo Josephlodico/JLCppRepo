@@ -31,7 +31,7 @@ public:
 
 };
 
-int main()
+int main2()
 {
     cout << "Welcome, This is the First c++ Exersice\n\n";
     //Input for account creation
